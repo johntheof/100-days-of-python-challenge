@@ -11,8 +11,9 @@ tip_percentage = int(input('What % of tip you want to give to the waiter?. 10, 1
 people = int(input('How many people are paying?'))
 
 total_tip = float((total * (tip_percentage / 100)))
-
 total_tip_per_person = round(total_tip / people ,2)
-
-
+pay_per_person = total_tip_per_person + total
+final_pay_per_perosn_incl_tip = (pay_per_person + total_tip_per_person) / people
 print(f'Eeach person should pay ${total_tip_per_person} as tip')
+#Pay total 
+print(f'Each person should pay $ {final_pay_per_perosn_incl_tip}')
