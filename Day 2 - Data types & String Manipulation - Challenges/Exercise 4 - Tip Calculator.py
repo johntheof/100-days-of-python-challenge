@@ -5,15 +5,14 @@
 #it will then ask how many people will split the bill
 #it will prin how much money each person has to pay in $. Limit to 2 decimal points
 
-print('Welcome to the tip calculator')
-total = float(input('What is the total amount you have to pay $'))
-tip_percentage = int(input('What % of tip you want to give to the waiter?. 10, 12 or 15?'))
-people = int(input('How many people are paying?'))
 
-total_tip = float((total * (tip_percentage / 100)))
-total_tip_per_person = round(total_tip / people ,2)
-pay_per_person = total_tip_per_person + total
-final_pay_per_perosn_incl_tip = (pay_per_person + total_tip_per_person) / people
-print(f'Eeach person should pay ${total_tip_per_person} as tip')
-#Pay total 
-print(f'Each person should pay $ {final_pay_per_perosn_incl_tip}')
+print('Welcome to the tip calculator')
+bill = float(input('What is the total amount you have to pay $'))
+tip = int(input('What % of tip you want to give to the waiter?. 10, 12 or 15?'))
+people = int(input('How many people are paying?'))
+tip_as_percent = tip / 100
+total_tip_amount = bill * tip_as_percent
+total_bill = bill + total_tip_amount
+bill_per_person = total_bill / people
+final_amount = round(bill_per_person, 2)
+print(f'Each person has to pay $ {final_amount}')
