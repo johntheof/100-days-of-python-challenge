@@ -17,3 +17,5 @@ person_who_will_pay = names[random_choice]
 print(f'Person who will pay is {person_who_will_pay}')
 
 
+#example with random choice
+#person_who_will_pay = random.choice(names) , selects a random state from the list
