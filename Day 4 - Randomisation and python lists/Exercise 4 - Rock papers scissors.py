@@ -24,8 +24,7 @@ scissors = ("""
           ______)
        __________)
       (____)
----.__(___)
-""")
+---.__(___)""")
 
 computer_select = random.randint(0,2)
 list = [rock,paper,scissors]
