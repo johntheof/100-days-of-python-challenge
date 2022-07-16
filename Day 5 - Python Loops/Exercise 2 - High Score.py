@@ -6,7 +6,6 @@
 
 input_scores = (input('Input a list of student scores: '))
 input_scores = input_scores.split(' ')
-print(input_scores)
 current  = 0
 for score in input_scores:
     score = int(score)
