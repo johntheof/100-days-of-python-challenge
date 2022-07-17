@@ -11,13 +11,18 @@ symbols = ['!','#','$','%','^','&','*','(',')','_','+']
 numbers = ['0','1','2','3','4','5','6','7','8','9']
 
 password = []
+#print(password) - for understanding
 for char in range(1, input_letters + 1): #after reading the code again adding comment below of what is +1
     password.append(random.choice(letters))
+    #print(password) - for understanding
 for char in range(1, input_symbols + 1): #basically range [1,10] prints all numbers from 1 to 9 without including 10. So adding +1, means it ranges for the whole number without skipping
     password += random.choice(symbols)
+    #print(f'--symbols--- {password}') - for undnerstanding
 for char in range(1, input_numbers + 1):
     password += random.choice(numbers)
+    #print(f'--numbers--- {password}') - for understanding
 random.shuffle(password)
+#print(f'shuffled {password}') - for understanding
 passle = ''
 for char in password:
     passle += char
